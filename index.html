@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý Sản phẩm - Lab 1</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; padding: 20px; background-color: #f4f4f4; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2 { color: #333; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #007bff; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        .result-box { background: #e9ecef; padding: 15px; border-radius: 5px; margin-top: 10px; font-family: monospace; }
+        .status-on { color: green; font-weight: bold; }
+        .status-off { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Lab 1: Quản lý Sản phẩm</h1>
+
+    <h2>Danh sách sản phẩm (Câu 2 & 8)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên sản phẩm</th>
+                <th>Giá (VNĐ)</th>
+                <th>Số lượng</th>
+                <th>Danh mục</th>
+                <th>Trạng thái</th>
+            </tr>
+        </thead>
+        <tbody id="product-table">
+            </tbody>
+    </table>
+
+    <h2>Kết quả tính toán (Câu 3 - 10)</h2>
+    <div id="results" class="result-box">
+        </div>
+</div>
+
+<script src="lab1.js"></script>
+</body>
+</html>
